@@ -1,0 +1,1811 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition-duration: 0s;
+    scroll-behavior: smooth;
+
+
+}
+
+body {
+    color: white;
+    background-color: black;
+
+
+}
+
+/* THIS IS HEADER SECTION OF STYLING CSS PROPERTEIS */
+#header {
+    top: 0;
+    right: 0;
+    z-index: 4;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    animation-duration: 1s;
+    justify-content: center;
+    background-color: #100c3b;
+    animation-name: headerAnimation;
+    animation-iteration-count: calc(1);
+
+}
+
+@keyframes headerAnimation {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
+
+.profile {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.profile strong {
+    font-size: 1.50em;
+    animation-duration: 1.50s;
+    animation-name: animationText;
+    animation-iteration-count: calc(1);
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.liks_header {
+    width: 60%;
+
+}
+
+.liks_header>ul {
+    display: flex;
+    color: white;
+    animation-name: animationText;
+    animation-duration: 1.50s;
+    animation-iteration-count: calc(1);
+    list-style: none;
+    justify-content: space-evenly;
+
+}
+
+ul>li>a {
+    color: white;
+    font-size: 1.10em;
+    text-decoration: none;
+    animation-name: animationText;
+    animation-duration: 1.50s;
+    animation-iteration-count: calc(1);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+@keyframes animationText {
+    0% {
+        transform: translatey(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatey(0px);
+    }
+
+}
+
+li:hover {
+    list-style: square;
+
+
+}
+
+.liks_layers {
+    width: 60%;
+    display: none;
+
+}
+
+.liks_layers>a {
+    color: white;
+
+
+}
+
+@media (max-width: 712px) {
+
+    .liks_layers {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+    }
+
+    .liks_layers>.openLiks {
+        margin-right: 20px;
+        cursor: pointer;
+
+
+    }
+
+    .liks_header {
+        display: none;
+
+
+    }
+
+    .profile {
+        width: 80%;
+
+
+    }
+
+    .profile strong {
+        margin-left: 20px;
+
+
+    }
+}
+
+/* THE END HEADER SECTION OF STYLING CSS PROPERTEIS */
+
+
+/* THIS IS HOME SECTION OF STYLING CSS PROPERTEIS */
+#Home_page {
+    width: 100%;
+    height: 650px;
+    transition-duration: 2s;
+    animation-duration: 1.20s;
+    background-repeat: no-repeat;
+    animation-name: landingAnimation;
+    background-position: calc(800px);
+    /* background-size: cover; */
+    animation-iteration-count: calc(1);
+    background-color: rgb(255, 255, 255);
+    background-image: url(programming-software-concept-illustration-with-characters-flat-design_198565-152.jpeg);
+
+
+
+}
+
+@keyframes landingAnimation {
+    0% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: calc(800px);
+
+    }
+
+}
+
+@media (max-width: 992px) {
+    #Home_page {
+        height: 600px;
+        background-position: center;
+    }
+
+
+}
+
+.title {
+    top: 200px;
+    left: 200px;
+    padding-left: 20px;
+    width: fit-content;
+    color: chocolate;
+    position: relative;
+    height: fit-content;
+    animation-duration: 1.30s;
+    animation-name: landingTitle;
+    border-left: 4px double red;
+    animation-iteration-count: calc(1);
+}
+
+.title h1 {
+    font-size: 4.50em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+@keyframes landingTitle {
+    0% {
+        opacity: 0;
+        transform: translate(-1000px);
+    }
+
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+
+    }
+
+}
+
+@media (max-width: 1236px) {
+    .title {
+        display: none;
+    }
+
+}
+
+.title_second {
+    display: none;
+
+
+}
+
+@media (max-width: 1235px) {
+    .title_second {
+        right: 0;
+        width: 100%;
+        bottom: 50px;
+        display: flex;
+        height: 200px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(-2deg);
+        background-color: #2d347c90;
+
+
+    }
+
+    .title_second p {
+        font-size: 4em;
+        text-align: center;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+    .title_second p {
+        font-size: 3.50em;
+
+    }
+}
+
+@media (max-width: 499px) {
+    .title_second p {
+        font-size: 3em;
+
+    }
+}
+
+/* THE END HOME SECTION OF STYLING CSS PROPERTEIS */
+
+
+
+/* THIS IS ABOUT SECTION OF STYLING CSS PROPERTEIS */
+#about_section {
+    width: 100%;
+    margin-top: 100px;
+    height: fit-content;
+    margin-bottom: 80px;
+    
+
+}
+
+.about_text {
+    width: 100%;
+
+
+}
+
+.about_text>h1 {
+    font-size: 3.50em;
+    margin-left: 20px;
+    animation-name: aboutTetxAnimation;
+    animation-duration: 0.50s;
+    animation-iteration-count: calc(1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+@keyframes aboutTetxAnimation {
+    0% {
+        transform: translatey(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translatey(0px);
+        opacity: 1;
+    }
+
+}
+
+.about_text>h1>abbr {
+    color: rgb(255, 0, 0);
+
+}
+
+.content_img_container {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+}
+
+.content {
+    width: 60%;
+    height: fit-content;
+    transition-duration: 1.50s;
+
+
+}
+
+.content>P {
+    font-size: 1.20em;
+    margin-left: 20px;
+    line-height: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.button_joinnig {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.button_joinnig>p {
+    font-size: 1.20em;
+    line-height: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.button_joinnig button {
+    width: 100px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 0.90em;
+    border-color: red;
+    border-radius: 100px;
+    background-color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.img_krishna {
+    width: 40%;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 1.50s;
+
+}
+
+.img_krishna img {
+    width: 280px;
+    height: 450px;
+    border-radius: 8px;
+    animation-name: x;
+    animation-duration: 2s;
+    animation-iteration-count: calc(1);
+}
+
+@media (max-width: 1024px) {
+    .content_img_container {
+        display: block;
+
+    }
+
+    .content {
+        width: 100%;
+
+    }
+
+    .img_krishna {
+        width: 100%;
+        margin-top: 40px;
+        justify-content: end;
+
+    }
+
+    .img_krishna img {
+        margin-right: 40px;
+
+
+    }
+
+}
+
+@media (max-width: 500px) {
+    .img_krishna {
+        justify-content: center;
+
+
+    }
+
+    .img_krishna img {
+        margin: 0;
+
+    }
+}
+@keyframes aboutsecontionanimaed {
+    0% {
+        transform: translatex(400px);
+        display: none;
+    }
+    100% {
+        transform: translatex(0px);
+        display: block;
+
+    }
+}
+
+/* THE END ABOUT SECTION OF STYLING CSS PROPERTEIS */
+
+
+/* This is projects section of styling css */
+#projects_first_container_made_by_me {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.projects_first_conatainer_inner {
+    width: 90%;
+    height: fit-content;
+
+}
+
+.first_priject_added_hrer {
+    width: 100%;
+    display: flex;
+
+
+}
+
+
+@media (max-width: 1062px) {
+
+    .first_priject_added_hrer {
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .img_for_build_project {
+        width: 100%;
+    }
+
+}
+
+.img_for_build_project {
+    width: 50%;
+    display: flex;
+    height: 340px;
+    border-radius: 8px;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url(Dr.\ Norman\ Borlaug.pnf.png);
+
+
+}
+
+@media (max-width: 1062px) {
+    .img_for_build_project {
+        width: 100%;
+        height: 400px;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+    .img_for_build_project {
+        width: 100%;
+        height: 250px;
+        background-position: center;
+
+    }
+}
+
+.img_for_build_project div {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(58, 58, 158, 0.8);
+
+
+}
+
+.img_for_build_project div:hover {
+    animation-duration: 2s;
+    animation-name: animtion;
+    background-color: transparent;
+    animation-iteration-count: calc(1);
+
+
+}
+
+@keyframes animtion {
+    0% {
+        width: 100%;
+        height: 100%;
+    }
+
+    100% {
+        width: 0;
+        height: 0;
+
+    }
+}
+
+
+
+.content_for_build_project {
+    top: 70px;
+    width: 50%;
+    z-index: 3;
+    right: 60px;
+    display: flex;
+    height: 250px;
+    position: relative;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: #100c3b;
+
+
+}
+
+@media (max-width: 1062px) {
+
+    .content_for_build_project {
+        top: -70px;
+        width: 90%;
+        z-index: 3;
+        right: 0px;
+        height: fit-content;
+
+
+    }
+}
+
+@media (max-width: 500px) {
+
+    .content_for_build_project {
+        top: -70px;
+        right: 0px;
+        width: 85%;
+        z-index: 3;
+        padding: 15px;
+
+
+    }
+}
+
+.content_for_project_inner_continaer {
+    width: 100%;
+
+}
+
+.content_for_project_inner_continaer h1 {
+    font-size: 2em;
+    margin-left: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content_for_project_inner_continaer p {
+    font-size: 1em;
+    margin-left: 5%;
+    text-align: start;
+    line-height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#click_top_show button {
+    width: 150px;
+    border: none;
+    height: 30px;
+    color: white;
+    margin-left: 5%;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border-color: #5936e6;
+    background-color: #5936e6;
+    transition-duration: 0.50s;
+    box-shadow: 0px 1px 3px 0px white;
+    ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+
+#click_top_show button:hover {
+
+    transform: translate(10px);
+}
+
+.projects_first_conatainer_inner_second {
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    height: fit-content;
+}
+
+@media (max-width: 1062px) {
+    .projects_first_conatainer_inner_second {
+        margin-top: -80px;
+    }
+}
+
+.img_for_build_project_second {
+    width: 50%;
+    display: flex;
+    height: 340px;
+    border-radius: 8px;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url(CAMPER\ CAFE.PNG);
+
+
+}
+
+@media (max-width: 1062px) {
+    .img_for_build_project_second {
+        width: 100%;
+        height: 400px;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+    .img_for_build_project_second {
+        width: 100%;
+        height: 250px;
+        background-position: center;
+
+    }
+}
+
+.img_for_build_project_second div {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(58, 58, 158, 0.8);
+
+
+}
+
+.img_for_build_project_second div:hover {
+    animation-duration: 2s;
+    animation-name: animtion;
+    background-color: transparent;
+    animation-iteration-count: calc(1);
+
+
+}
+
+
+.content_for_build_project_second {
+    top: 70px;
+    width: 50%;
+    z-index: 3;
+    right: -60px;
+    display: flex;
+    height: 250px;
+    position: relative;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: #100c3b;
+
+
+}
+
+@media (max-width: 1062px) {
+
+    .content_for_build_project_second {
+        top: 580px;
+        width: 90%;
+        z-index: 3;
+        right: 0px;
+        height: fit-content;
+
+
+    }
+}
+
+@media (max-width: 500px) {
+
+    .content_for_build_project_second {
+        top: 70px;
+        right: 0px;
+        width: 85%;
+        z-index: 3;
+        padding: 15px;
+
+
+    }
+}
+
+.content_for_project_inner_continaer_second {
+    width: 100%;
+
+}
+
+.content_for_project_inner_continaer_second h1 {
+    font-size: 2em;
+    margin-left: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content_for_project_inner_continaer_second p {
+    font-size: 1em;
+    margin-left: 5%;
+    text-align: start;
+    line-height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#click_top_show button:hover {
+
+    transform: translate(10px);
+}
+
+
+#projects {
+    width: 100%;
+    margin-top: 150px;
+    height: fit-content;
+
+
+}
+
+.title_for_projects {
+    width: 100%;
+    height: fit-content;
+
+
+}
+
+.small_title {
+    width: 100%;
+    height: 25px;
+    justify-content: center;
+
+
+}
+
+.line {
+    padding: 5px;
+    min-width: 25%;
+    margin-left: 191px;
+    width: fit-content;
+
+}
+
+.line p {
+    padding: 5px;
+    font-size: 1em;
+    border-bottom: 5px solid #2f2f2f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.big_title {
+    width: 100%;
+    margin-top: 25px;
+    padding-bottom: 10px;
+
+
+}
+
+.big_title h1 {
+    font-size: 2.10em;
+    margin-left: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.about_project_content {
+    width: 100%;
+    padding: 5px;
+    padding-left: 0;
+
+}
+
+.about_project_content p {
+    font-size: 1em;
+    line-height: 28px;
+    margin-left: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+@media (max-width: 1011px) {
+    .title_for_projects {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .line {
+        margin-left: 0;
+
+    }
+
+    .big_title h1 {
+        margin-left: 0;
+
+    }
+
+    .about_project_content p {
+        margin-left: 0;
+
+
+    }
+}
+
+
+
+.projects_adding_container {
+    width: 100%;
+    display: flex;
+    margin-top: -20px;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+
+}
+
+.projects_inner_container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: space-evenly;
+
+}
+
+
+.some_other_projects_conatiner {
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 100px;
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.priject_one_line,
+.priject_two_line,
+.priject_three_line {
+    width: 312.66px;
+    height: 324.66px;
+    margin-top: -10px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    transition-duration: 0.20s;
+    background-color: #232323;
+    /* background-image: linear-gradient(1105deg, rgba(158, 58, 58, 0.8), rgba(206, 136, 136, 0.7)), url(download.jpg); */
+    border: 2px solid rgb(32, 32, 32);
+
+}
+
+.priject_three_line:hover {
+
+    transform: translatey(10px);
+}
+
+.priject_two_line:hover {
+
+    transform: translatey(10px);
+}
+
+.priject_one_line:hover {
+
+    transform: translatey(10px);
+}
+
+.header_projects {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.icons_file {
+    width: 20%;
+
+}
+
+.icons_file svg {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+.icons_file svg:hover {
+    color: greenyellow;
+
+}
+
+.icons_codecamp_arrow {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.icons_codecamp_arrow svg {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    color: white;
+}
+
+.icons_codecamp_arrow svg:hover {
+    color: greenyellow;
+
+}
+
+.icons_codecamp_arrow img {
+    width: 30px;
+    margin: 10px;
+    height: 30px;
+    background-color: white;
+    border-radius: 1000px;
+
+}
+
+.icons_codecamp_arrow img:hover {
+    background-color: greenyellow;
+}
+
+
+.content_about_projetcs {
+    width: 100%;
+
+}
+
+.content_about_projetcs h1 {
+    font-size: 23px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content_about_projetcs p {
+    padding-left: 10px;
+    line-height: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content_about_projetcs h1:hover {
+    color: greenyellow;
+
+}
+
+.showAllContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.showbtn {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #100c3b;
+    font-size: 1.3em;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.40s;
+    box-shadow: 0px 1px 4px 0px white;
+    ;
+
+}
+
+.showbtn:active {
+    transform: translatey(-10px);
+}
+
+.showbtn:hover {
+    color: greenyellow;
+    font-weight: bold;
+
+
+}
+
+.showbtn button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: black;
+
+}
+@media (max-width: 500px) {
+    .showbtn {
+        
+            color: greenyellow;
+        
+    }
+}
+
+/* The end projects section of styling css */
+
+
+
+/* THIS IS SERVICES SECTION OF STYLING CSS PROPERTEIS */
+/* #projects_section {
+    width: 100%;
+    margin-top: 200px;
+    height: fit-content;
+
+}
+.projects_title {
+    width: 100%;
+
+
+}
+.about_projects {
+    width: 50%;
+    float: right;
+    margin-left: 20px;
+    margin-right: 10px;
+    height: fit-content;
+    border-right: 5px solid rebeccapurple;
+
+
+}
+@media (max-width: 1269px) {
+    .about_projects {
+        width: 100%;
+        text-align: start;
+        
+    }
+    
+}
+.about_projects > p {
+    color: gray;
+    font-size: 20px;
+    margin-left: 35px;
+    line-height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about_projects > h1 {
+    color: gray;
+    font-size: 2em;
+    margin-left: 35px;
+    font-family: sans-serif;
+
+}
+
+#services_section {
+    width: 100%;
+    display: flex;
+    margin-top:560px;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+
+}
+
+.services_inner {
+    width: 90%;
+    text-align: center;
+    height: fit-content;
+    display: inline-block;
+
+}
+.services_inner > div > img {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+.service_content_box_1 {
+    width: 300px;
+    height: 70px;
+    background-color: #853b78;
+
+}
+.service_content_box_2 {
+    width: 300px;
+    height: 70px;
+    background-color: #dc973b;
+}
+.service_content_box_3 {
+    width: 300px;
+    height: 70px;
+    background-color: #54789c;
+}
+
+.service_content_box_1, .service_content_box_2, .service_content_box_3 {
+    display: flex;
+    color: white;
+    cursor: pointer;
+    font-size: 1.50em;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+
+
+} 
+
+.developer_container {
+    margin-left: 30px;
+    display: inline-block;
+
+
+}
+
+.prctice_container {
+    margin-left: 30px;
+    display: inline-block;
+
+
+}
+
+.project_container{
+    margin-left: 30px;
+    display: inline-block;
+
+
+}
+
+
+@media (max-width: 500px) {
+    .developer_container, .prctice_container, .project_container{
+        margin: 0;
+        margin-top: 50px;
+    }
+    
+}
+@media (max-width: 1121px) {
+    .developer_container, .prctice_container, .project_container{
+        margin-top: 50px;
+    }
+
+} */
+/* THE END SERVICES SECTION OF STYLING CSSS PROPERTEIS */
+
+
+/* THIS IS CONTACT SECTION OF STYLING CSS PROPERTEIS */
+#contact {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    margin-top: 100px;
+    height: fit-content;
+    justify-content: center;
+
+
+}
+
+#The_footer {
+    width: 100%;
+    height: fit-content;
+    min-height: fit-content;
+
+
+}
+
+.social-icons {
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+
+}
+
+.social-icons>a {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    color: white;
+    border-radius: 100%;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    border: 1px solid white;
+    transition-duration: 0.50s;
+
+
+}
+
+.social-icons>a:hover {
+    border-color: #f98167;
+
+
+}
+
+.father {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.link_follow {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-evenly;
+    border-top: 1px solid #374151;
+    border-bottom: 1px solid #374151;
+
+}
+
+@media (max-width:915px) {
+    .link_follow>h1 {
+        display: none;
+    }
+
+    .link_follow {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+
+}
+
+/* THE END CANTACT SECTION OF STYLING CSS PROPERTEIS */
+
+
+/* THIS IS RIGHTBAR AND OPNE LINKS FROM RIGHT*/
+.modalBackground {
+    top: 10%;
+    right: 0;
+    width: 60%;
+    z-index: 100;
+    height: 100%;
+    display: none;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    animation-duration: 0.50s;
+    background-color: #000000;
+    animation-name: liksAnimation;
+    animation-iteration-count: calc(1);
+}
+
+@keyframes liksAnimation {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.imgcontainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.close {
+    width: 98%;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    font-size: 1.30em;
+    align-items: center;
+    border-bottom: 2px solid rgb(54, 54, 54);
+
+}
+
+.close p {
+    margin-left: 10px;
+
+}
+
+.close p:hover {
+    color: red;
+
+}
+
+.links_inner {
+    width: 98%;
+    height: 200px;
+
+}
+
+.links_inner ul {
+    line-height: 40px;
+
+}
+
+.links_inner ul li {
+    list-style: none;
+    border-bottom: 2px solid rgb(54, 54, 54);
+
+}
+
+.links_inner ul li a {
+    margin-left: 10px;
+
+}
+
+.links_inner ul li a:hover {
+    text-decoration: underline;
+
+}
+
+/* THE END IS RIGHTBAR AND OPNE LINKS FROM RIGHT */
+
+/* THIS IS sign OF STYLING CSS PROPERTEIS */
+.signContainer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    background-color: #00000059;
+
+}
+
+.sign_inner {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    animation-name: sidebar;
+    animation-duration: 0.50s;
+    animation-iteration-count: calc(1);
+}
+
+@media (max-width: 499px) {
+    .sign_inner {
+        width: 80%;
+
+    }
+}
+
+@keyframes sidebar {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+
+}
+
+.header_sign {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #100c3b;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-left: 20px;
+    font-size: 1.50em;
+}
+
+.cutting {
+    float: right;
+    color: white;
+    font-size: 2em;
+    padding-right: 20px;
+}
+
+.cutting:hover {
+    color: red;
+    cursor: pointer;
+    border-radius: 100%;
+
+}
+
+.guest {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+}
+
+.guest_inner {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.guest_inner img {
+    width: 100px;
+    border-radius: 100%;
+    animation-delay: 5s;
+    animation-name: guest;
+    animation-duration: 2s;
+    background-color: chocolate;
+    animation-iteration-count: calc(1);
+
+}
+
+@keyframes guest {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotatey(180deg);
+    }
+
+    100% {
+        transform: rotatey(0deg);
+    }
+}
+
+.guest_inner button {
+    width: 100px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.form {
+    width: 100%;
+    color: black;
+    margin-top: 70px;
+    height: fit-content;
+}
+
+form {
+    display: flex;
+    font-size: 1.50em;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#name,
+#email,
+#password {
+    width: 80%;
+    height: 30px;
+    margin-top: 30px;
+    font-size: 0.60em;
+    transition-duration: 0.50s;
+}
+
+#name:focus {
+    width: 90%;
+
+}
+
+#submit,
+#reset {
+    width: 81%;
+    height: 34px;
+    margin-top: 30px;
+    font-size: 0.60em;
+    transition-duration: 0.50s;
+}
+
+/* THE END sign OF STYLING CSS PROPERTEIS */
+
+
+/* This is tool section of css */
+#five {
+    width: 80px;
+    height: 300px;
+    display: flex;
+    z-index: 10;
+    position: fixed;
+    right: 2.50%;
+    bottom: 24%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-top: 2px solid rgb(36, 36, 36);
+    border-left: 2px solid rgb(36, 36, 36);
+    border-right: 2px solid rgb(36, 36, 36);
+    border-radius: 100px;
+    animation-name: five;
+    display: none;
+    z-index: 100;
+    animation-duration: 0.60s;
+    animation-iteration-count: calc(1);
+}
+
+@media (max-width: 800px) {
+    #five {
+        right: 3.60px;
+        bottom: 25%;
+    }
+}
+
+@keyframes five {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 300px;
+    }
+}
+
+#five div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: rgb(255, 0, 0);
+
+}
+
+@keyframes fives {
+    0% {
+        width: 0;
+    }
+
+    100% {
+
+        width: 300px;
+    }
+}
+
+.tool {
+    width: 62px;
+    height: 62px;
+    position: fixed;
+    bottom: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 3%;
+    color: white;
+    font-size: 2em;
+    border-radius: 100%;
+    cursor: pointer;
+    animation-name: tool-moving;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color: rgb(255, 0, 0);
+}
+
+@keyframes tool-moving {
+    0% {}
+
+    100% {}
+
+}
+
+.tool img {
+    width: 100%;
+    border-radius: 100%;
+
+}
+
+#cut {
+    animation-name: cut;
+    animation-duration: 2s;
+
+}
+
+@keyframes cut {
+    0% {
+        position: relative;
+        left: 100px;
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+
+    100% {
+        position: relative;
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+.tools {
+    width: 62px;
+    height: 62px;
+    position: fixed;
+    bottom: 15%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    right: 3%;
+    color: white;
+    font-size: 2em;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: rgba(238, 32, 32, 0.38);
+}
+
+/* the end tool section of css */
+
+/* This is loading for web page */
+.web_loader {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.loading {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loading img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100000px;
+    border: 2px solid rgb(40, 40, 40);
+}
+
+main {
+    animation-name: animationLanding;
+    animation-duration: 1s;
+}
+
+@keyframes animationLanding {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/* The end for loading for web page */
+
+#third_section {
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 8px;
+    height: fit-content;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(1105deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(City\ Skyline.png);
+
+
+}
+
+.footer_titile_heading {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.footer_titile_heading h1 {
+    font-size: 50px;
+    padding-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.footer_titile_heading p {
+    font-size: 20px;
+    font-family: fantasy;
+    color: #be3144;
+    padding: 20px;
+
+}
+
+.contact_us {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.icons_follow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+    transition-property: all;
+
+}
+
+.icons_follow a {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.10s;
+
+}
+
+.icons_follow i {
+    padding: 22px;
+
+}
+
+.icons_follow a:hover {
+    transform: translatey(20px);
+
+}
+
+.bottom_tittle {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 138px;
+    padding-top: 10px;
+    font-family: cursive;
+    text-align: center;
+    /* background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(download.jpg);
+    border-top: 2px solid linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(download.jpg); */
+}
+
+@media (max-width:513px) {
+    .third_section {
+        height: 700px;
+    }
+}
