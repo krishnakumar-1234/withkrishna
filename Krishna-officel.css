@@ -878,8 +878,7 @@ li:hover {
 }
 
 .projects_inner_container {
-    max-width: 80%;
-    width: 1300px;
+    width: 1000px;
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
