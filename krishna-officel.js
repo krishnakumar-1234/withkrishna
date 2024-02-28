@@ -5,30 +5,34 @@
 
 // })
 
+const ShowallPrijetcsOrMoreProjectsConatainr = document.getElementById('ShowallPrijetcsOrMoreProjectsConatainr');
 const main = document.querySelector("main");
 const web_loader = document.getElementById('web_loader');
 web_loader.style.display = "flex";
 main.style.display = "none";
+ShowallPrijetcsOrMoreProjectsConatainr.style.display = "none";
 setTimeout(() => {
-    web_loader.style.display = "none";
-    main.style.display = "block";
+  web_loader.style.display = "none";
+  main.style.display = "block";
+  ShowallPrijetcsOrMoreProjectsConatainr.style.display = "none";
 
-    
-}, 4000);
+
+
+}, 3000);
 
 const body = document.querySelector("body");
 main.addEventListener("mousemove", () => {
   // console.log("hello")
 })
 
-document.getElementById('sign').addEventListener('click', function(){
-    document.getElementById('signContainer').style.display = 'block';
-    console.log("Yes, This is working form sidebar");
+document.getElementById('sign').addEventListener('click', function () {
+  document.getElementById('signContainer').style.display = 'block';
+  console.log("Yes, This is working form sidebar");
 
 })
-document.getElementById('cutting').addEventListener('click', function(){
-    document.getElementById('signContainer').style.display = 'none';
-    console.log("Yes, This is working form sidebar cutting");
+document.getElementById('cutting').addEventListener('click', function () {
+  document.getElementById('signContainer').style.display = 'none';
+  console.log("Yes, This is working form sidebar cutting");
 
 
 })
@@ -36,29 +40,29 @@ const openLiks = document.getElementById('openLiks')
 const LinksPgae = document.getElementById('LinksPgae');
 const closeLinks = document.getElementById('closeLinks');
 openLiks.addEventListener('click', (e) => {
-    console.log('This is liks button cliked', e)
-    LinksPgae.style.display = 'block';
+  console.log('This is liks button cliked', e)
+  LinksPgae.style.display = 'block';
 })
 closeLinks.addEventListener('click', (e) => {
-    console.log('This is closeLiks button cliked', e)
-    LinksPgae.style.display = 'none';
+  console.log('This is closeLiks button cliked', e)
+  LinksPgae.style.display = 'none';
 })
 
 
-document.getElementById('tool').addEventListener('click', function(){
-    console.log("This is opne tab of tool");
-    document.getElementById('tool').style.display = 'none';
-    document.getElementById('tools').style.display = 'flex';
-    document.getElementById('flag').style.display = 'none';
-    document.getElementById('five').style.display = 'flex';
-  
+document.getElementById('tool').addEventListener('click', function () {
+  console.log("This is opne tab of tool");
+  document.getElementById('tool').style.display = 'none';
+  document.getElementById('tools').style.display = 'flex';
+  document.getElementById('flag').style.display = 'none';
+  document.getElementById('five').style.display = 'flex';
+
 })
-document.getElementById('tools').addEventListener('click', () =>{
-    console.log("This is opne tab of tool off");
-   document.getElementById('five').style.display = 'none';
-   document.getElementById('tool').style.display = 'flex';
-   document.getElementById('flag').style.display = 'block';
-   document.getElementById('tools').style.display = 'none';
+document.getElementById('tools').addEventListener('click', () => {
+  console.log("This is opne tab of tool off");
+  document.getElementById('five').style.display = 'none';
+  document.getElementById('tool').style.display = 'flex';
+  document.getElementById('flag').style.display = 'block';
+  document.getElementById('tools').style.display = 'none';
 
 })
 
@@ -67,14 +71,14 @@ document.getElementById('tools').addEventListener('click', () =>{
 let loginForm = document.getElementById('loginForm');
 loginForm.addEventListener('submit', (e) => {
   e.preventDefault();
-let email = document.getElementById('email')
-let name = document.getElementById('name')
-let password = document.getElementById('password')
-let profile = document.getElementById('profile');
-profile.innerText = `${name.value}`
+  let email = document.getElementById('email')
+  let name = document.getElementById('name')
+  let password = document.getElementById('password')
+  let profile = document.getElementById('profile');
+  profile.innerText = `${name.value}`
 
 
-if (name.value == "" || password.value == "" || email.value == "") {
+  if (name.value == "" || password.value == "" || email.value == "") {
     alert("Ensure you input a value in all fields!");
   } else {
     // perform operation with form input
@@ -86,7 +90,22 @@ if (name.value == "" || password.value == "" || email.value == "") {
 
     email.value = "";
     password.value = "";
-name.value = "";
-}
+    name.value = "";
+  }
 });
 
+const showbtnMoreProjects = document.getElementById('showbtnMoreProjects');
+const BackToHome = document.getElementById('BackToHome');
+showbtnMoreProjects.addEventListener('click', (P) => {
+  console.log(P)
+  main.style.display = 'none'
+  ShowallPrijetcsOrMoreProjectsConatainr.style.display = 'block'
+})
+BackToHome.addEventListener('click', () => {
+  main.style.display = 'block'
+  ShowallPrijetcsOrMoreProjectsConatainr.style.display = 'none'
+})
+
+const ImgForBuildProjectThird = document.getElementById("ImgForBuildProjectThird");
+console.log(ImgForBuildProjectThird)
+ImgForBuildProjectThird.style.backgroundImage = "url('Magazine.png')"
