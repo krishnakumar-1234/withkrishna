@@ -164,9 +164,9 @@ li:hover {
     animation-duration: 1.20s;
     background-repeat: no-repeat;
     animation-name: landingAnimation;
-    background-position: calc(800px);
-    /* background-size: cover; */
+    background-position: calc(700px);
     animation-iteration-count: calc(1);
+    background-size: calc(510px);
     background-color: rgb(255, 255, 255);
     background-image: url(programming-software-concept-illustration-with-characters-flat-design_198565-152.jpeg);
 
@@ -271,6 +271,9 @@ li:hover {
         font-size: 3.50em;
 
     }
+    #Home_page {
+        background-size: calc(400px);
+    }
 }
 
 @media (max-width: 499px) {
@@ -290,7 +293,7 @@ li:hover {
     margin-top: 100px;
     height: fit-content;
     margin-bottom: 80px;
-    
+
 
 }
 
@@ -337,9 +340,11 @@ li:hover {
 
 .content {
     width: 60%;
-    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
     transition-duration: 1.50s;
-
 
 }
 
@@ -364,35 +369,38 @@ li:hover {
 }
 
 .button_joinnig button {
-    width: 100px;
-    height: 40px;
+    width: 150px;
+    height: 45px;
     color: white;
     cursor: pointer;
     margin-top: 15px;
     font-size: 0.90em;
     border-color: red;
-    border-radius: 100px;
+    border-radius: 10px;
     background-color: red;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#MoreAboutMe {
+    margin-left: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
 .img_krishna {
     width: 40%;
+    height: 500px;
     display: flex;
-    height: fit-content;
     align-items: center;
     justify-content: center;
     transition-duration: 1.50s;
-
 }
 
 .img_krishna img {
     width: 280px;
     height: 450px;
     border-radius: 8px;
-    animation-name: x;
-    animation-duration: 2s;
-    animation-iteration-count: calc(1);
+
 }
 
 @media (max-width: 1024px) {
@@ -403,18 +411,23 @@ li:hover {
 
     .content {
         width: 100%;
+        height: fit-content;
 
     }
 
     .img_krishna {
         width: 100%;
         margin-top: 40px;
+        height: fit-content;
         justify-content: end;
 
     }
 
     .img_krishna img {
+        width: 90%;
+        height: fit-content;
         margin-right: 40px;
+
 
 
     }
@@ -433,17 +446,7 @@ li:hover {
 
     }
 }
-@keyframes aboutsecontionanimaed {
-    0% {
-        transform: translatex(400px);
-        display: none;
-    }
-    100% {
-        transform: translatex(0px);
-        display: block;
 
-    }
-}
 
 /* THE END ABOUT SECTION OF STYLING CSS PROPERTEIS */
 
@@ -878,7 +881,7 @@ li:hover {
 }
 
 .projects_inner_container {
-    width: 1000px;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
@@ -1061,153 +1064,16 @@ li:hover {
     background-color: black;
 
 }
+
 @media (max-width: 500px) {
     .showbtn {
-        
-            color: greenyellow;
-        
+
+        color: greenyellow;
+
     }
 }
 
 /* The end projects section of styling css */
-
-
-
-/* THIS IS SERVICES SECTION OF STYLING CSS PROPERTEIS */
-/* #projects_section {
-    width: 100%;
-    margin-top: 200px;
-    height: fit-content;
-
-}
-.projects_title {
-    width: 100%;
-
-
-}
-.about_projects {
-    width: 50%;
-    float: right;
-    margin-left: 20px;
-    margin-right: 10px;
-    height: fit-content;
-    border-right: 5px solid rebeccapurple;
-
-
-}
-@media (max-width: 1269px) {
-    .about_projects {
-        width: 100%;
-        text-align: start;
-        
-    }
-    
-}
-.about_projects > p {
-    color: gray;
-    font-size: 20px;
-    margin-left: 35px;
-    line-height: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.about_projects > h1 {
-    color: gray;
-    font-size: 2em;
-    margin-left: 35px;
-    font-family: sans-serif;
-
-}
-
-#services_section {
-    width: 100%;
-    display: flex;
-    margin-top:560px;
-    align-items: center;
-    height: fit-content;
-    justify-content: center;
-
-}
-
-.services_inner {
-    width: 90%;
-    text-align: center;
-    height: fit-content;
-    display: inline-block;
-
-}
-.services_inner > div > img {
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-
-}
-.service_content_box_1 {
-    width: 300px;
-    height: 70px;
-    background-color: #853b78;
-
-}
-.service_content_box_2 {
-    width: 300px;
-    height: 70px;
-    background-color: #dc973b;
-}
-.service_content_box_3 {
-    width: 300px;
-    height: 70px;
-    background-color: #54789c;
-}
-
-.service_content_box_1, .service_content_box_2, .service_content_box_3 {
-    display: flex;
-    color: white;
-    cursor: pointer;
-    font-size: 1.50em;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-
-
-} 
-
-.developer_container {
-    margin-left: 30px;
-    display: inline-block;
-
-
-}
-
-.prctice_container {
-    margin-left: 30px;
-    display: inline-block;
-
-
-}
-
-.project_container{
-    margin-left: 30px;
-    display: inline-block;
-
-
-}
-
-
-@media (max-width: 500px) {
-    .developer_container, .prctice_container, .project_container{
-        margin: 0;
-        margin-top: 50px;
-    }
-    
-}
-@media (max-width: 1121px) {
-    .developer_container, .prctice_container, .project_container{
-        margin-top: 50px;
-    }
-
-} */
-/* THE END SERVICES SECTION OF STYLING CSSS PROPERTEIS */
 
 
 /* THIS IS CONTACT SECTION OF STYLING CSS PROPERTEIS */
@@ -1718,14 +1584,16 @@ main {
 /* The end for loading for web page */
 
 #third_section {
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     border-radius: 8px;
     height: fit-content;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(1105deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(City\ Skyline.png);
+    /* background-image: linear-gradient(1105deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(wallpaperflare.com_wallpaper.jpg); */
+    /* border-collapse: collapse; */
+    background-color: #15222E;
 
 
 }
@@ -1809,3 +1677,67 @@ main {
         height: 700px;
     }
 }
+
+/* This is ShowallPrijetcsOrMoreProjectsConatainr of styling css */
+#ShowallPrijetcsOrMoreProjectsConatainr {
+    width: 100%;
+    height: 900px;
+    animation-name: ShowAllProjectsAnimation;
+    animation-duration: 1.70s;
+    animation-iteration-count: calc(1);
+}
+
+.ShowAllProjectsHeadingContent {
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+}
+
+.innerShowAllProjects {
+    width: 980px;
+    padding: 30px;
+    height: fit-content;
+    background-color: #15222E;
+}
+
+.innerShowAllProjects h1 {
+    font-size: 2em;
+    padding-bottom: 5px;
+    width: fit-content;
+    color: yellowgreen;
+    border-bottom: 2px solid rgb(57, 57, 57);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.innerShowAllProjects p {
+    font-size: 1em;
+    margin-top: 6px;
+    color: #ebebeb9e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#BackToHome {
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1em;
+    box-shadow: 2px 2px 0 0 white;
+    background-color: yellowgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes ShowAllProjectsAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* The end ShowallPrijetcsOrMoreProjectsConatainr of styling css */
